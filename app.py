@@ -101,7 +101,7 @@ def authenticate_user(authentication_status, name, username):
                 otp_uri = totp.provisioning_uri(name=user_data.get('email', ''), issuer_name="SynoGPT")
                 qr = qrcode.make(otp_uri)
                 qr = qr.resize((200, 200))
-                st.image(qr, caption="Scan this QR code with your authenticator app")
+                st.image(qr, caption="Scan this QR code with your authenticator app (Recommended: Google Authenticator)")
 
             st.title("Welcome to SynoptekGPT!")
             otp_input = st.text_input("Enter the OTP from your authenticator app", type="password", key='otp_input')
