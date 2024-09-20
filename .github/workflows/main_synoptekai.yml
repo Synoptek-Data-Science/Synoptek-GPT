@@ -66,4 +66,4 @@ jobs:
         with:
           app-name: 'Synoptekai'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_850E761F60344D97B4AAC856DEB83AA8 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0BC2BA09105A43549D05C38FAE9327DB }}
